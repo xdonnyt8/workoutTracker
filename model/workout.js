@@ -20,10 +20,10 @@ const workoutSchema = new Schema(
             weight: {
                 type: Number
             },
-            set: {
+            sets: {
                 type: Number
             },
-            rep: {
+            reps: {
                 type: Number
             },
             duration: {
@@ -31,8 +31,12 @@ const workoutSchema = new Schema(
             }
 
         }
-    ]
     
+    ],
+    day: {
+        type: Date,
+        default: Date.now
+    }
 
 })
 
